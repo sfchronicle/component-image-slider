@@ -31,11 +31,15 @@ proto.createdCallback = function() {
     first.style.width = x + "px";
   };
 
-  first.addEventListener("mousedown", function(e) {
+  container.addEventListener('mousedown',function(e) {
+    e.preventDefault();
+    container.addEventListener("mousedown",resizeable);
+  });
+  container.addEventListener("mousedown", function(e) {
     e.preventDefault();
     container.addEventListener("mousemove", resizeable);
   });
-  first.addEventListener("touchstart", function(e) {
+  container.addEventListener("touchstart", function(e) {
     e.preventDefault();
     container.addEventListener("touchmove", resizeable);
   });
