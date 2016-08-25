@@ -19,7 +19,7 @@ proto.createdCallback = function() {
   var first = this.querySelector(".first");
   var container = this;
 
-  var resizeable = function(e) {
+  var resizeable = function(e, transition) {
     e.preventDefault();
     var bounds = e.target.getBoundingClientRect();
     var x;
@@ -28,13 +28,24 @@ proto.createdCallback = function() {
     } else { 
       x = e.pageX - bounds.left;
     }
+    first.style.transition = "";
     first.style.width = x + "px";
   };
 
-  container.addEventListener('mousedown',function(e) {
+  var resizeme = function(e) {
     e.preventDefault();
-    container.addEventListener("mousedown",resizeable);
-  });
+    var bounds = e.target.getBoundingClientRect();
+    var x;
+    if (e.touches) { 
+      x = e.touches[0].pageX - bounds.left;
+    } else { 
+      x = e.pageX - bounds.left;
+    }
+    first.style.transition = "width 0.5s"
+    first.style.width = x + "px";
+  };
+
+  container.addEventListener("mousedown",resizeme);
   container.addEventListener("mousedown", function(e) {
     e.preventDefault();
     container.addEventListener("mousemove", resizeable);
