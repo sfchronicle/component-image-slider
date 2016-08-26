@@ -1,9 +1,9 @@
 {
-  "name": "component-image-slider",
-  "version": "0.0.1",
-  "homepage": "https://github.com/seattletimes/component-image-slider",
+  "name": "image-slider",
+  "version": "0.0.3",
+  "homepage": "https://github.com/sfchronicle/component-image-slider",
   "authors": [
-    "The Seattle Times"
+    "Benjamin Din", "The Seattle Times"
   ],
   "license": "MIT",
   "ignore": [

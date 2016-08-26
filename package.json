@@ -1,11 +1,11 @@
 {
-  "name": "component-image-slider",
-  "description": "",
-  "version": "0.0.2",
-  "author": "Audrey Carlsen",
+  "name": "img-slider",
+  "description": "Image slider to compare before/after images. Forked from The Seattle Times component-image-slider.",
+  "version": "0.0.3",
+  "author": "Benjamin Din, Audrey Carlsen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seattletimes/component-image-slider.git"
+    "url": "https://github.com/sfchronicle/component-image-slider.git"
   },
   "main": "src/image-slider/image-slider",
   "dependencies": {

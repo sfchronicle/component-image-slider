@@ -1,4 +1,4 @@
-component-image-slider
+image-slider
 ====================
 
 Quickly generate an HTML slider to easily overlay and compare two images. Example of usage:
@@ -9,6 +9,4 @@ Quickly generate an HTML slider to easily overlay and compare two images. Exampl
     <img src="http://placehold.it/300x450">
   </image-slider>
 ```
-
-`<image-slider>` was built using the Seattle Times' [web component
-template](https://github.com/seattletimes/component-template).
+Modified from The Seattle Times' component-image-slider to add extra functionality.
