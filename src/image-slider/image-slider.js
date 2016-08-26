@@ -20,12 +20,6 @@ proto.createdCallback = function() {
   var container = this;
   var slider = this.querySelector(".slider");
 
-  // window.addEventListener("load", function(){
-  //   var sleft = slider.style.left;
-  //   slider.style.left = sleft - 2.5 + "px";
-  //   console.log(slider.style.left);
-  // });
-
   var resizeable = function(e, transition) {
     e.preventDefault();
     var bounds = e.target.getBoundingClientRect();
