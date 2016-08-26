@@ -30,8 +30,8 @@ proto.createdCallback = function() {
       x = e.pageX - bounds.left;
     }
 
-    if (x <= 5.5) {
-      x = 5.5;
+    if (x <= 3.5) {
+      x = 3.5;
     }
     else {
       x;
@@ -55,8 +55,8 @@ proto.createdCallback = function() {
 
     console.log(x);
 
-    if (x <= 5.5) {
-      x = 5.5;
+    if (x <= 3.5) {
+      x = 3.5;
     }
     else {
       x;
