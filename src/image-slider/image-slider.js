@@ -18,6 +18,13 @@ proto.createdCallback = function() {
 
   var first = this.querySelector(".first");
   var container = this;
+  var slider = this.querySelector(".slider");
+
+  // window.addEventListener("load", function(){
+  //   var sleft = slider.style.left;
+  //   slider.style.left = sleft - 2.5 + "px";
+  //   console.log(slider.style.left);
+  // });
 
   var resizeable = function(e, transition) {
     e.preventDefault();
@@ -28,6 +35,16 @@ proto.createdCallback = function() {
     } else { 
       x = e.pageX - bounds.left;
     }
+
+    if (x <= 4) {
+      x = 4;
+    }
+    else {
+      x;
+    }
+
+    slider.style.transition = "";
+    slider.style.left = x -2 + "px";
     first.style.transition = "";
     first.style.width = x + "px";
   };
@@ -41,7 +58,19 @@ proto.createdCallback = function() {
     } else { 
       x = e.pageX - bounds.left;
     }
-    first.style.transition = "width 0.5s"
+
+    console.log(x);
+
+    if (x <= 4) {
+      x = 4;
+    }
+    else {
+      x;
+    }
+
+    slider.style.transition = "left 0.5s";
+    slider.style.left = x -2 + "px";
+    first.style.transition = "width 0.5s";
     first.style.width = x + "px";
   };
 
