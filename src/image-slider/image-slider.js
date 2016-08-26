@@ -30,15 +30,15 @@ proto.createdCallback = function() {
       x = e.pageX - bounds.left;
     }
 
-    if (x <= 4) {
-      x = 4;
+    if (x <= 5.5) {
+      x = 5.5;
     }
     else {
       x;
     }
 
     slider.style.transition = "";
-    slider.style.left = x -2 + "px";
+    slider.style.left = x-2.5 + "px";
     first.style.transition = "";
     first.style.width = x + "px";
   };
@@ -55,15 +55,15 @@ proto.createdCallback = function() {
 
     console.log(x);
 
-    if (x <= 4) {
-      x = 4;
+    if (x <= 5.5) {
+      x = 5.5;
     }
     else {
       x;
     }
 
     slider.style.transition = "left 0.5s";
-    slider.style.left = x -2 + "px";
+    slider.style.left = x-2.5 + "px";
     first.style.transition = "width 0.5s";
     first.style.width = x + "px";
   };
