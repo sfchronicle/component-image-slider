@@ -1,7 +1,7 @@
 {
   "name": "image-slider",
   "description": "Image slider to compare before/after images. Forked from The Seattle Times component-image-slider.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Benjamin Din, Audrey Carlsen",
   "repository": {
     "type": "git",
