@@ -30,8 +30,7 @@ proto.createdCallback = function() {
       x = e.pageX - bounds.left;
     }
 
-    var width = first.parentElement.style.width;
-    width = width.substring(0,width.length-2);
+    var width = first.parentElement.clientWidth;
 
     if (x <= 3.5) {
       x = 3.5;
