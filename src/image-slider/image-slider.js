@@ -69,6 +69,7 @@ proto.createdCallback = function() {
   };
 
   container.addEventListener("mousedown",resizeme);
+  container.addEventListener("touchstart",resizeme);
   container.addEventListener("mousedown", function(e) {
     e.preventDefault();
     container.addEventListener("mousemove", resizeable);
